@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace BenTools\Pest\ApiPlatform;
 
-use ApiPlatform\Api\IriConverterInterface;
+use ApiPlatform\Metadata\IriConverterInterface;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Operation;
 use ApiPlatform\Symfony\Bundle\Test\Client;
@@ -18,7 +18,6 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use function BenTools\Pest\Symfony\inject;
 use function class_exists;
 use function is_string;
-
 
 function jwt(UserInterface $user): string
 {

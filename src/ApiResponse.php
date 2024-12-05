@@ -53,7 +53,7 @@ final class ApiResponse implements ResponseInterface, ArrayAccess
 
     public function items(): array
     {
-        return $this['hydra:member'];
+        return $this['member'];
     }
 
     public function offsetExists(mixed $offset): bool

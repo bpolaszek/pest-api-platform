@@ -54,7 +54,7 @@ function api(?Client $client = null): ApiClient
     return new ApiClient($client ?? createBrowser());
 }
 
-function iri(object|string|null $resource, int|string|Stringable $id = null, ?Operation $operation = null, array $context = []): ?string
+function iri(object|string|null $resource, int|string|Stringable|null $id = null, ?Operation $operation = null, array $context = []): ?string
 {
     if (null === $resource) {
         return null;

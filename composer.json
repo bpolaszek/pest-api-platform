@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": ">=8.2",
-        "pestphp/pest": "~2.35",
+        "pestphp/pest": "~2.35|~3.0",
         "symfony/framework-bundle": "~6.4 | ~7.1",
         "bentools/pest-symfony-kernel": "dev-main",
         "symfony/http-client": "~6.4 | ~7.1",
